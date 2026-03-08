@@ -10,6 +10,13 @@
 - Prometheus запустится на порту 8081
 - Grafana запустится на порту 8082
 
+# Спецификация
+
+https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/api/openapi.yaml
+
+# Swagger
+https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/%D0%9B%D0%A0-2.pdf
+
 # Метрики
 
 Prometheus + Grafana
@@ -30,13 +37,3 @@ Loki + Promtail
 Пример панели:
 
 ![alt text](./report/loki.png)
-
-# Трейсы
-Jaeger
-
-- все трейсы
-- трейсы с кодом 500
-
-Пример панели:
-
-![alt text](./report/traces.png)
