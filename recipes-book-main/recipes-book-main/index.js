@@ -29,6 +29,9 @@ const totalRequests = new client.Counter({
     labelNames: ['method', 'endpoint', 'status'],
 });
 
+const { shoppingListSize } = require("./metrics");
+register.registerMetric(shoppingListSize);
+
 register.registerMetric(totalRequests)
 
 app.use((req, res, next) => {
