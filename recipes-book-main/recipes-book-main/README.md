@@ -22,9 +22,14 @@ https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main
 Prometheus + Grafana
 - стандартные метрики NodeJS приложений https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L18
 - пользовательская метрика "Число запросов" https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L26
+- пользовательская метрика "Среднее число товаров в списке покупок" https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L32
 - Для того чтобы Prometheus мог собирать метрики, в приложении реализован эндпоинт /metrics: https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L64
 - панель создается автоматически
+- язык запросов - promQL. Пример: https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/grafana/dashboards/dashboard.json#L331
 
 Пример панели:
 
 ![alt text](./report/grafana.png)
+![alt text](./report/metric.jpg)
+
+
