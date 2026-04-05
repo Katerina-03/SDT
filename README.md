@@ -12,20 +12,20 @@
 
 # Спецификация
 
-https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/api/openapi.yaml
+https://github.com/Katerina-03/recipes-book/blob/main/api/openapi.yaml
 
 # Swagger
-https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/%D0%9B%D0%A0-2.pdf
+https://github.com/Katerina-03/recipes-book/blob/main/%D0%9B%D0%A0-2.pdf
 
 # Метрики
 
 Prometheus + Grafana
-- стандартные метрики NodeJS приложений https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L18
-- пользовательская метрика "Число запросов" https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L26
-- пользовательская метрика "Среднее число товаров в списке покупок" https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L32
-- Для того чтобы Prometheus мог собирать метрики, в приложении реализован эндпоинт /metrics: https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/index.js#L64
+- стандартные метрики NodeJS приложений https://github.com/Katerina-03/recipes-book/blob/main/index.js#L18
+- пользовательская метрика "Число запросов" https://github.com/Katerina-03/recipes-book/blob/main/index.js#L26
+- пользовательская метрика "Среднее число товаров в списке покупок" https://github.com/Katerina-03/recipes-book/blob/main/index.js#L32
+- Для того чтобы Prometheus мог собирать метрики, в приложении реализован эндпоинт /metrics: https://github.com/Katerina-03/recipes-book/blob/main/index.js#L67
 - панель создается автоматически
-- язык запросов - promQL. Пример: https://github.com/Katerina-03/SDT/blob/main/recipes-book-main/recipes-book-main/grafana/dashboards/dashboard.json#L331
+- язык запросов - promQL. Пример: https://github.com/Katerina-03/recipes-book/blob/main/grafana/dashboards/dashboard.json#L331
 
 Пример панели:
 
