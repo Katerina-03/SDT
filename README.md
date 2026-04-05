@@ -42,3 +42,12 @@ Loki + Promtail
 Пример панели:
 
 ![alt text](./report/loki.png)
+
+# Трейсы
+Jaeger
+
+- все трейсы
+- трейсы с кодом 500
+
+Пример панели:
+![alt text](./report/traces.jpg)

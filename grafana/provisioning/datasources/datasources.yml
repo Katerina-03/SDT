@@ -25,3 +25,4 @@ datasources:
     basicAuth: false
     isDefault: false
     editable: true
+    uid: ce6mozlfcpxxcd
