@@ -7,19 +7,19 @@ externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
 servers:
-- url: /
+  - url: /
 tags:
-- name: ingredients
-  description: Ингредиенты для готовки
-- name: recipes
-  description: Все о рецептах
-- name: shoppinglist
-  description: Список покупок для готовки
+  - name: ingredients
+    description: Ингредиенты для готовки
+  - name: recipes
+    description: Все о рецептах
+  - name: shoppinglist
+    description: Список покупок для готовки
 paths:
   /ingredients:
     get:
       tags:
-      - ingredients
+        - ingredients
       summary: Получить список ингредиентов
       description: Возвращает список ингредиентов
       operationId: getIngredients
@@ -36,7 +36,7 @@ paths:
       x-swagger-router-controller: Ingredients
     post:
       tags:
-      - ingredients
+        - ingredients
       summary: Добавить новый ингредиент
       description: Добавляет новый ингредиент
       operationId: addIngredient
@@ -69,20 +69,20 @@ paths:
   /ingredients/{id}:
     put:
       tags:
-      - ingredients
+        - ingredients
       summary: Обновить ингредиент по id
       description: Обновляет ингредиент
       operationId: updateIngredientById
       parameters:
-      - name: id
-        in: path
-        description: ID обновляемого ингредиента
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID обновляемого ингредиента
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       requestBody:
         description: Данные о ингредиенте
         content:
@@ -112,20 +112,20 @@ paths:
       x-swagger-router-controller: Ingredients
     delete:
       tags:
-      - ingredients
+        - ingredients
       summary: Удалить ингредиент по id
       description: Удаляет ингредиент с указанным id
       operationId: deleteIngredientById
       parameters:
-      - name: id
-        in: path
-        description: ID удаляемого ингредиента
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID удаляемого ингредиента
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       responses:
         "200":
           description: Успешное удаление
@@ -137,7 +137,7 @@ paths:
   /recipes:
     get:
       tags:
-      - recipes
+        - recipes
       summary: Получить список рецептов
       description: Возвращает список добавленных рецептов
       operationId: getRecipes
@@ -154,7 +154,7 @@ paths:
       x-swagger-router-controller: Recipes
     post:
       tags:
-      - recipes
+        - recipes
       summary: Добавить новый рецепт
       description: Добавляет новый рецепт
       operationId: addRecipe
@@ -187,20 +187,20 @@ paths:
   /recipes/{id}:
     get:
       tags:
-      - recipes
+        - recipes
       summary: Получить рецепт по id
       description: Возвращает рецепт
       operationId: getRecipeById
       parameters:
-      - name: id
-        in: path
-        description: ID запрашиваемого рецепта
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID запрашиваемого рецепта
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       responses:
         "200":
           description: Успешное выполнение
@@ -218,20 +218,20 @@ paths:
       x-swagger-router-controller: Recipes
     put:
       tags:
-      - recipes
+        - recipes
       summary: Обновить рецепт по id
       description: Обновляет рецепт рецепт
       operationId: updateRecipeById
       parameters:
-      - name: id
-        in: path
-        description: ID обновляемого рецепта
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID обновляемого рецепта
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       requestBody:
         description: Данные о рецепте
         content:
@@ -261,20 +261,20 @@ paths:
       x-swagger-router-controller: Recipes
     delete:
       tags:
-      - recipes
+        - recipes
       summary: Удалить рецепт по id
       description: Удаляет рецепт с указанным id
       operationId: deleteRecipeById
       parameters:
-      - name: id
-        in: path
-        description: ID удаляемого рецепта
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID удаляемого рецепта
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       responses:
         "200":
           description: Успешное удаление
@@ -286,7 +286,7 @@ paths:
   /shoppinglist:
     get:
       tags:
-      - shoppinglist
+        - shoppinglist
       summary: Получить список списков покупок
       description: Возвращает список списков покупок
       operationId: getShoppingLists
@@ -304,20 +304,20 @@ paths:
   /shoppinglist/{id}:
     get:
       tags:
-      - shoppinglist
+        - shoppinglist
       summary: Получить список покупок по id
       description: Возвращает список покупок
       operationId: getShoppingListById
       parameters:
-      - name: id
-        in: path
-        description: ID запрашиваемого списка
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID запрашиваемого списка
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       responses:
         "200":
           description: Успешное выполнение
@@ -335,20 +335,20 @@ paths:
       x-swagger-router-controller: Shoppinglist
     put:
       tags:
-      - shoppinglist
+        - shoppinglist
       summary: Обновить список покупок по id
       description: Обновляет рецепт рецепт
       operationId: updateShoppingListById
       parameters:
-      - name: id
-        in: path
-        description: ID обновляемого списка
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID обновляемого списка
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       requestBody:
         description: Данные о списке
         content:
@@ -378,20 +378,20 @@ paths:
       x-swagger-router-controller: Shoppinglist
     delete:
       tags:
-      - shoppinglist
+        - shoppinglist
       summary: Удалить список покупок по id
       description: Удаляет список покупок с указанным id
       operationId: deleteShoppingListById
       parameters:
-      - name: id
-        in: path
-        description: ID удаляемого списка
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: id
+          in: path
+          description: ID удаляемого списка
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       responses:
         "200":
           description: Успешное удаление
@@ -403,29 +403,29 @@ paths:
   /shoppinglist/{listId}/recipe/{recipeId}:
     post:
       tags:
-      - shoppinglist
+        - shoppinglist
       summary: Добавить в список продукты для рецепта
       description: "Добавляет в список ингредиенты, содержащиеся в рецепте"
       operationId: addRecipeIngredientsToList
       parameters:
-      - name: listId
-        in: path
-        description: ID обновляемого списка
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
-      - name: recipeId
-        in: path
-        description: ID рецепта
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-          format: int64
+        - name: listId
+          in: path
+          description: ID обновляемого списка
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
+        - name: recipeId
+          in: path
+          description: ID рецепта
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: integer
+            format: int64
       requestBody:
         description: Данные о списке
         content:
@@ -489,23 +489,23 @@ components:
           type: array
           description: Шаги приготовления
           example:
-          - Почистить и помыть грибы
-          - Сварить суп
-          - "Заказать пиццу с грибами, пока ждешь готовности супа"
+            - Почистить и помыть грибы
+            - Сварить суп
+            - "Заказать пиццу с грибами, пока ждешь готовности супа"
           items:
             type: string
       example:
         portion: 12
         name: Грибной суп
         ingredients:
-        - ""
-        - ""
+          - ""
+          - ""
         id: 10
         creationDate: 2000-01-23T04:56:07.000+00:00
         steps:
-        - Почистить и помыть грибы
-        - Сварить суп
-        - "Заказать пиццу с грибами, пока ждешь готовности супа"
+          - Почистить и помыть грибы
+          - Сварить суп
+          - "Заказать пиццу с грибами, пока ждешь готовности супа"
         cookingTime: 120
     Ingredient:
       type: object
@@ -522,33 +522,33 @@ components:
           type: string
           example: Other
           enum:
-          - Vegetable
-          - Fruit
-          - Meat
-          - Fish
-          - Dairy
-          - Spice
-          - Sweets
-          - Other
+            - Vegetable
+            - Fruit
+            - Meat
+            - Fish
+            - Dairy
+            - Spice
+            - Sweets
+            - Other
       example:
         name: Грибы
         id: 11
         type: Other
     RecipeIngredient:
       allOf:
-      - $ref: '#/components/schemas/Ingredient'
-      - type: object
-        properties:
-          amount:
-            type: number
-            example: 4
-          unit:
-            type: string
-            example: gr
-            enum:
-            - p
-            - gr
-            - ml
+        - $ref: '#/components/schemas/Ingredient'
+        - type: object
+          properties:
+            amount:
+              type: number
+              example: 4
+            unit:
+              type: string
+              example: gr
+              enum:
+                - p
+                - gr
+                - ml
     ShoppingList:
       type: object
       properties:
@@ -574,5 +574,5 @@ components:
         id: 11
         creationDate: 2000-01-23T04:56:07.000+00:00
         items:
-        - ""
-        - ""
+          - ""
+          - ""
