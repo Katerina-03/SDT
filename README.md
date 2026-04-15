@@ -51,3 +51,11 @@ Jaeger
 
 Пример панели:
 ![alt text](./report/traces.jpg)
+
+Примеры спанов:
+
+![alt text](./report/span1.jpg)
+
+![alt text](./report/span2.jpg)
+
+![alt text](./report/span3.jpg)
